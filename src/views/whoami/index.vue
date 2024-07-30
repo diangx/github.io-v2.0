@@ -1,20 +1,43 @@
 <template>
-  <v-row>
-    <v-col cols="12" md="12">
-        <v-card subtitle="hello" title="Who Am I ?">
-            <v-container
-                class="px-10"
-                fluid
-            >
-                <v-divider :thickness="3">ABOUT ME</v-divider>
-                1
-                <v-divider :thickness="3">SKILLS</v-divider>
-                2    
-                <v-divider :thickness="3">EXPERIENCE</v-divider>
-                3
-            </v-container>          
-        </v-card>
-      <!-- <div class="text-center text-caption">Using Props Only</div> -->
-    </v-col>
-  </v-row>
+    <v-row>
+        <v-col cols="12" md="12">
+            <v-card>
+                <v-card-title class="font-weight-black text-h6 text-md-h5 text-lg-h4">{{"Who Am I ?"}}</v-card-title>
+                <!-- <v-card-text>
+                    Body text
+                </v-card-text> -->
+                <v-container class="px-10" fluid>
+                    <v-divider :thickness="5">
+                        <div class="font-weight-black text-subtitle-1 text-md-subtitle-1 text-lg-subtitle-2"> ABOUT ME </div>
+                    </v-divider>
+                    <aboutme-section/>
+
+                    <v-divider :thickness="5">
+                        <div class="font-weight-black text-subtitle-1 text-md-subtitle-1 text-lg-subtitle-2"> SKILLS </div>
+                    </v-divider>
+                    <skills-section/>
+
+                    <v-divider :thickness="5">
+                        <div class="font-weight-black text-subtitle-1 text-md-subtitle-1 text-lg-subtitle-2"> EXPERIENCE </div>
+                    </v-divider>
+                    <experienceSection/>
+                </v-container>          
+            </v-card>
+        <!-- <div class="text-center text-caption">Using Props Only</div> -->
+        </v-col>
+    </v-row>
 </template>
+
+<script>
+import aboutmeSection from "./aboutme/index.vue";
+import skillsSection from "./skills/index.vue";
+import experienceSection from "./experience/index.vue";
+
+export default {
+    components : {
+        aboutmeSection,
+        skillsSection,
+        experienceSection
+    }
+}
+</script>
