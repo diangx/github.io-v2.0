@@ -1,13 +1,16 @@
 <template>
   <whoami-page></whoami-page>
+  <project-page></project-page>
 </template>
 
 <script>
 import whoamiPage from './whoami/index.vue'
+import projectPage from './project/index.vue'
 
 export default {
     components :{
-        whoamiPage
+        whoamiPage,
+        projectPage
     },
     data() {
         return {
