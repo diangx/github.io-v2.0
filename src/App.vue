@@ -3,9 +3,12 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">LOGIN</router-link>
   </nav> -->
-  <div style="padding:30px;">
+  <v-container
+    class="pa-6"
+    fluid
+  >
     <router-view/>
-  </div>
+  </v-container>
 </template>
 
 <style>
