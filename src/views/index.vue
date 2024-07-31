@@ -1,6 +1,8 @@
 <template>
-  <whoami-page></whoami-page>
-  <project-page></project-page>
+    <div>
+        <whoami-page></whoami-page>
+        <project-page></project-page>
+    </div>
 </template>
 
 <script>

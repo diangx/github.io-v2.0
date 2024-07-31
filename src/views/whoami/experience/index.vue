@@ -1,5 +1,5 @@
 <template>
-<v-timeline align="start" direction="horizontal">
+<v-timeline align="start" :direction="timelineDirection">
     <v-timeline-item
     v-for="(year, i) in years"
     :key="i"
@@ -25,30 +25,46 @@
 </template>
 
 <script>
+import { useDisplay } from 'vuetify'
+
 export default {
-    data: () => ({
-        years: [
-            {
-            color: 'cyan',
-            year: '2021.2',
-            },
-            {
-            color: 'green',
-            year: '2021.6',
-            },
-            {
-            color: 'pink',
-            year: '2021.8',
-            },
-            {
-            color: 'amber',
-            year: '2024.1 ~ TODAY',
-            },
-            // {
-            // color: 'orange',
-            // year: '',
-            // },
-        ],
-    }),
+    setup() {
+        const { mobile } = useDisplay()
+        return { mobile }
+    },
+    data() {
+        return {
+            years: [
+                {
+                    color: 'cyan',
+                    year: '2021.2',
+                },
+                {
+                    color: 'green',
+                    year: '2021.6',
+                },
+                {
+                    color: 'pink',
+                    year: '2021.8',
+                },
+                {
+                    color: 'amber',
+                    year: '2024.1 ~ TODAY',
+                },
+            ],
+            timelineDirection: 'horizontal'
+        }
+    },
+    watch : {
+        'mobile' () {
+            this.timelineDirection = this.mobile ? 'vertical' : 'horizontal'
+        }
+    },
+    beforeMount() {
+        this.timelineDirection = this.mobile ? 'vertical' : 'horizontal'
+    },
+    mounted() {
+
+    }
 }
 </script>
