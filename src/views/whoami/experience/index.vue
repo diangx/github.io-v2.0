@@ -4,7 +4,7 @@
     v-for="(year, i) in years"
     :key="i"
     :dot-color="year.color"
-    size="small"
+    :size="year.size"
     >
     <template v-slot:opposite>
         <div
@@ -14,7 +14,9 @@
     </template>
     <div>
         <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
-        Lorem ipsum
+            <strong>
+                {{ year.data }}
+            </strong>
         </h2>
         <div>
         Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
@@ -37,19 +39,27 @@ export default {
             years: [
                 {
                     color: 'cyan',
-                    year: '2021.2',
+                    year: '2021.2 - 2021.5',
+                    data: 'a',
+                    size: 'small'
                 },
                 {
                     color: 'green',
                     year: '2021.6',
+                    data: 'b',
+                    size: 'large'
                 },
                 {
                     color: 'pink',
                     year: '2021.8',
+                    data: 'c',
+                    size: 'small'
                 },
                 {
                     color: 'amber',
                     year: '2024.1 ~ TODAY',
+                    data: 'd',
+                    size: 'large'
                 },
             ],
             timelineDirection: 'horizontal'
