@@ -17,4 +17,10 @@ const vuetify = createVuetify({
   },
 })
 
-createApp(App).use(router).use(vuetify).mount('#app')
+const app = createApp(App)
+
+app.use(router)
+app.use(vuetify)
+app.config.globalProperties.$state = process.env.STATE
+
+app.mount('#app')
