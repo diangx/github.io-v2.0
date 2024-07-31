@@ -4,8 +4,7 @@
     <router-link to="/about">LOGIN</router-link>
   </nav> -->
   <v-container
-    class="pa-6"
-    fluid
+    class="px-16"
   >
     <router-view/>
   </v-container>
