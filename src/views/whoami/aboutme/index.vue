@@ -18,7 +18,7 @@ export default {
                     subtitle : '김 지 완'
                 },
                 {
-                    title : '1996.10.04 / Male',
+                    title : '1996.10.04',
                     subtitle : 'Made in Korea'
                 }
             ]

@@ -13,11 +13,11 @@
         ></div>
     </template>
     <div>
-        <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
+        <h3 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
             <strong>
-                {{ year.data }}
+                {{ year.title }}
             </strong>
-        </h2>
+        </h3>
         <div>
         Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
         </div>
@@ -40,25 +40,25 @@ export default {
                 {
                     color: 'cyan',
                     year: '2021.2 - 2021.5',
-                    data: 'a',
+                    title: 'a',
                     size: 'small'
                 },
                 {
                     color: 'green',
                     year: '2021.6',
-                    data: 'b',
+                    title: 'b',
                     size: 'large'
                 },
                 {
                     color: 'pink',
                     year: '2021.8',
-                    data: 'c',
+                    title: 'c',
                     size: 'small'
                 },
                 {
                     color: 'amber',
                     year: '2024.1 ~ TODAY',
-                    data: 'd',
+                    title: 'd',
                     size: 'large'
                 },
             ],
