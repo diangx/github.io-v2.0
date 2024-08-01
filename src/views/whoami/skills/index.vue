@@ -3,7 +3,7 @@
         <span class="subheading">FRONT STACK</span>
         <div class="d-flex justify-center mb-6">
             <v-chip-group column class="justify-center">
-                <v-chip v-for="item in frontSkill" :key="item.name">
+                <v-chip v-for="item in frontSkill" :key="item.name" :ripple="false">
                     <svg-icon type="mdi" :path="item.icon"/> {{ item.name }}
                 </v-chip>
             </v-chip-group>
@@ -12,7 +12,7 @@
         <span class="subheading">BACK STACK</span>
         <div class="d-flex justify-center mb-6">
             <v-chip-group column>
-                <v-chip v-for="item in backSkill" :key="item.name">
+                <v-chip v-for="item in backSkill" :key="item.name" :ripple="false">
                     <svg-icon type="mdi" :path="item.icon"/> {{ item.name }}
                 </v-chip>
             </v-chip-group>
@@ -21,7 +21,7 @@
         <span class="subheading">ENVIRONMENT</span>
         <div class="d-flex justify-center mb-6">
             <v-chip-group column>
-                <v-chip v-for="item in envSkill" :key="item.name">
+                <v-chip v-for="item in envSkill" :key="item.name" :ripple="false">
                     <svg-icon type="mdi" :path="item.icon"/> {{ item.name }}
                 </v-chip>
             </v-chip-group>
@@ -30,7 +30,7 @@
         <span class="subheading">CODE & VERSION MANAGEMENT</span>
         <div class="d-flex justify-center mb-6">
             <v-chip-group column>
-                <v-chip v-for="item in mgmtSkill" :key="item.name">
+                <v-chip v-for="item in mgmtSkill" :key="item.name" :ripple="false">
                     <svg-icon type="mdi" :path="item.icon"/> {{ item.name }}
                 </v-chip>   
             </v-chip-group>
@@ -39,7 +39,7 @@
         <span class="subheading">ISSUE MANAGEMENT</span>
         <div class="d-flex justify-center mb-6">
             <v-chip-group column>
-                <v-chip v-for="item in issueSkill" :key="item.name">
+                <v-chip v-for="item in issueSkill" :key="item.name" :ripple="false">
                     <svg-icon type="mdi" :path="item.icon"/> {{ item.name }}
                 </v-chip>
             </v-chip-group>
@@ -48,7 +48,7 @@
         <span class="subheading">NETWORK / WIRELESS CHIP CODE</span>
         <div class="d-flex justify-center mb-6">
             <v-chip-group column>
-                <v-chip v-for="item in etcSkill" :key="item.name">
+                <v-chip v-for="item in etcSkill" :key="item.name" :ripple="false">
                     <svg-icon type="mdi" :path="item.icon"/> {{ item.name }}
                 </v-chip>
             </v-chip-group>
