@@ -31,7 +31,7 @@
                             ></v-btn>
                         </template>
                         <template v-slot:default="{ isActive }">
-                            <v-card title="KT WiFi 7D (Vibrant WiFi)">
+                            <v-card title="Web Service Control">
                                 <v-card-text>
                                         <v-row>
                                             <v-col
@@ -44,6 +44,7 @@
                                                 :src="list.img"
                                                 aspect-ratio="1"
                                                 class="bg-grey-lighten-2"
+                                                
                                             >
                                                 <template v-slot:placeholder>
                                                 <v-row
@@ -65,7 +66,7 @@
                                     <v-spacer></v-spacer>
 
                                     <v-btn
-                                    text="Close"
+                                    text="Close Dialog"
                                     @click="isActive.value = false"
                                     ></v-btn>
                                 </v-card-actions>
@@ -77,18 +78,17 @@
         </v-hover>
 
         <v-card-title>
-        Vibrant WiFi
+        {{ "Web Service Agent" }}
         </v-card-title>
 
         <v-card-subtitle>
-        2024.1 - 2024.11
+        {{ '...' }}
         </v-card-subtitle>
 
         <v-card-actions>
         <!-- <v-btn
-            color="blue"
+            color="orange-lighten-2"
             text="Explore"
-            @click="show = !show"
         ></v-btn> -->
 
         <v-spacer></v-spacer>
@@ -104,7 +104,7 @@
             <v-divider></v-divider>
 
             <v-card-text>
-                {{ desc }}
+            I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
             </v-card-text>
         </div>
         </v-expand-transition>
@@ -121,6 +121,18 @@ export default {
                 text: `It's New Release Friday`,
                 subtext: 'Newly released songs.',
                 img: ''
+            },
+            {
+                title: 'New Releases',
+                text: `It's New Release Friday`,
+                subtext: 'Newly released songs.',
+                img: ''
+            },
+            {
+                title: 'New Releases',
+                text: `It's New Release Friday`,
+                subtext: 'Newly released songs.',
+                img: ''
             }
         ],
         transparent: 'rgba(255, 255, 255, 0)',
@@ -129,9 +141,9 @@ export default {
         desc : ''
     }),
     mounted () {
-        this.items[0].img = this.$images.KT_PC_LOGIN_1
+        this.items[0].img = this.$images.SV_SERVER_MONITOR_1
 
-        this.imglist = Object.keys(this.$images).filter(key => key.startsWith('KT_'))
+        this.imglist = Object.keys(this.$images).filter(key => key.startsWith('SV_'))
             .map(key => ({ name: key, img: this.$images[key] }));
     }
   }

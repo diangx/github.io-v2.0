@@ -65,7 +65,7 @@ import {
     mdiGit,mdiBitbucket,
     mdiJira,mdiAlphaC,
     mdiDomain,
-    mdiDatabase,mdiAlphaV
+    mdiDatabase,mdiAlphaV,mdiAlphaN
 } from '@mdi/js';
 
 export default {
@@ -125,6 +125,10 @@ export default {
                 {
                     name: 'VUEX',
                     icon: mdiAlphaV
+                },
+                {
+                    name: 'NGINX',
+                    icon: mdiAlphaN
                 },
             ],
             envSkill: [

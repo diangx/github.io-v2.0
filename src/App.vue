@@ -4,11 +4,44 @@
     <router-link to="/about">LOGIN</router-link>
   </nav> -->
   <v-container
-    class="px-16"
+    v-bind:class="containerClass"
   >
     <router-view/>
   </v-container>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isMobile: false,
+    };
+  },
+  computed: {
+    containerClass() {
+      // 모바일일 때는 클래스를 사용하지 않음
+      return this.isMobile ? 'px-1' : 'px-16';
+    },
+  },
+  mounted() {
+    // 초기 화면 크기를 확인
+    this.checkIfMobile();
+
+    // 화면 크기 변경 이벤트 추가
+    window.addEventListener('resize', this.checkIfMobile);
+  },
+  beforeDestroy() {
+    // 이벤트 리스너 제거
+    window.removeEventListener('resize', this.checkIfMobile);
+  },
+  methods: {
+    checkIfMobile() {
+      // 모바일 환경인지 확인 (768px 이하를 모바일로 간주)
+      this.isMobile = window.innerWidth <= 768;
+    },
+  },
+};
+</script>
 
 <style>
 #app {

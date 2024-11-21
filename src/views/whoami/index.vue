@@ -6,7 +6,18 @@
                 <!-- <v-card-text>
                     Body text
                 </v-card-text> -->
-                <v-container class="px-10" fluid>
+                <v-container class="px-10">
+                    <!-- <v-card
+                            variant="text"
+                            class="mx-auto"
+                            width="100%"
+                        >
+                        <v-divider :thickness="5">
+                        <div class="font-weight-black text-subtitle-1 text-md-subtitle-1 text-lg-subtitle-2"> {{ $state ?  "1-1" : "ABOUT ME"}} </div>
+                        </v-divider>
+                        <aboutme-section/>
+                    </v-card> -->
+
                     <v-divider :thickness="5">
                         <div class="font-weight-black text-subtitle-1 text-md-subtitle-1 text-lg-subtitle-2"> {{ $state ?  "1-1" : "ABOUT ME"}} </div>
                     </v-divider>
