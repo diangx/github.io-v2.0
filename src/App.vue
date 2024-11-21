@@ -51,6 +51,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   background: #F5F5F5;
+
+  min-height: 100vh; /* 전체 화면 높이를 유지 */
+  background-image: url('@/assets/background.webp'); /* 배경 이미지 경로 */
+  background-size: cover; /* 이미지가 전체 화면을 덮도록 설정 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  background-position: center; /* 이미지 가운데 정렬 */
 }
 /* 
 nav {
