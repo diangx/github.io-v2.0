@@ -82,7 +82,7 @@
         </v-card-title>
 
         <v-card-subtitle>
-        {{ "..." }}
+        {{ "-" }}
         </v-card-subtitle>
 
         <v-card-actions>

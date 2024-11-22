@@ -78,11 +78,11 @@
         </v-hover>
 
         <v-card-title>
-        {{ "Web Service Agent" }}
+        {{ "WS Agent" }}
         </v-card-title>
 
         <v-card-subtitle>
-        {{ '...' }}
+        {{ '-' }}
         </v-card-subtitle>
 
         <v-card-actions>

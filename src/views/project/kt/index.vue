@@ -77,11 +77,11 @@
         </v-hover>
 
         <v-card-title>
-        Vibrant WiFi
+        Vibrant WiFi7D
         </v-card-title>
 
         <v-card-subtitle>
-        2024.1 - 2024.11
+        -
         </v-card-subtitle>
 
         <v-card-actions>
