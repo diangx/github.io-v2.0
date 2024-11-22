@@ -36,8 +36,8 @@
                 <v-btn
                     v-bind="activatorProps"
                     color="cyan"
-                    text="Process"
-                    variant="flat"
+                    text="Curriculum"
+                    variant="outlined"
                 ></v-btn>
             </template>
 
@@ -97,9 +97,9 @@ export default {
                 {
                     color: 'pink',
                     year: '2021.8',
-                    title: 'Graduated from college while working',
+                    title: 'College graduation',
                     size: 'small',
-                    desc: ''
+                    desc: 'Graduated from college while working'
                 },
                 {
                     color: 'amber',
