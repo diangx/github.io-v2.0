@@ -36,7 +36,7 @@
                 <v-btn
                     v-bind="activatorProps"
                     color="cyan"
-                    text="Curriculum"
+                    text="Detail"
                     variant="outlined"
                 ></v-btn>
             </template>
@@ -56,7 +56,7 @@
                     <v-spacer></v-spacer>
 
                     <v-btn
-                    text="Close Dialog"
+                    text="Close"
                     @click="isActive.value = false"
                     ></v-btn>
                 </v-card-actions>

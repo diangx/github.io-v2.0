@@ -8,10 +8,16 @@
   >
     <router-view/>
   </v-container>
+  <LanguageSelector />
 </template>
 
 <script>
+import LanguageSelector from "./components/LanguageSelector.vue";
+
 export default {
+  components: {
+    LanguageSelector,
+  },
   data() {
     return {
       isMobile: false,
@@ -44,6 +50,12 @@ export default {
 </script>
 
 <style>
+html, body {
+  margin: 0; /* 브라우저 기본 마진 제거 */
+  padding: 0; /* 브라우저 기본 패딩 제거 */
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
