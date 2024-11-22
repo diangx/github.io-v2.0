@@ -53,10 +53,11 @@ export default {
   background: #F5F5F5;
 
   min-height: 100vh; /* 전체 화면 높이를 유지 */
-  background-image: url('@/assets/background.webp'); /* 배경 이미지 경로 */
-  background-size: cover; /* 이미지가 전체 화면을 덮도록 설정 */
+  background-image: url('@/assets/background-high.webp'); /* 배경 이미지 경로 */
+  background-size: cover; /* 이미지 비율을 유지하며 화면에 맞춤 */
   background-repeat: no-repeat; /* 이미지 반복 방지 */
-  background-position: center; /* 이미지 가운데 정렬 */
+  background-position: center center; /* 이미지 수직 및 수평 가운데 정렬 */
+  background-attachment: fixed; /* 배경 고정 (스크롤 시 배경 고정) */
 }
 /* 
 nav {
