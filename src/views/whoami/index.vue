@@ -2,7 +2,7 @@
     <v-row>
         <v-col cols="12" md="12">
             <v-card>
-                <v-card-title class="font-weight-black text-h6 text-md-h5 text-lg-h4">{{ $state ?  "1" : "Who Am I ?"}}</v-card-title>
+                <v-card-title class="font-weight-black text-h6 text-md-h5 text-lg-h4">{{ $state ?  "1" : t('about_me.title') }}</v-card-title>
                 <!-- <v-card-text>
                     Body text
                 </v-card-text> -->
@@ -32,7 +32,7 @@
                         <div class="font-weight-black text-subtitle-1 text-md-subtitle-1 text-lg-subtitle-2"> {{ $state ?  "1-3" : "EXPERIENCE"}}</div>
                     </v-divider>
                     <experienceSection/>
-                </v-container>          
+                </v-container>
             </v-card>
         <!-- <div class="text-center text-caption">Using Props Only</div> -->
         </v-col>

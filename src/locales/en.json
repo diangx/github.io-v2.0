@@ -1,4 +1,43 @@
 {
-    "greeting": "Hello",
-    "welcome": "Welcome to our application"
+  "about_me": {
+    "title": "Who Am I ?",
+    "name": "KIM JIWAN",
+    "korean_name": "김 지 완",
+    "dob": "1996.10.04",
+    "origin": "Made in Korea"
+  },
+  "skills": {
+    "front": "FRONT STACK",
+    "back": "BACK STACK",
+    "environment": "ENVIRONMENT",
+    "code_management": "CODE & VERSION MANAGEMENT",
+    "issue_management": "ISSUE MANAGEMENT",
+    "network_chip": "NETWORK / WIRELESS CHIP CODE"
+  },
+  "experience": {
+    "iot_bootcamp": {
+      "title": "IoT System Embedded Boot Camp",
+      "duration": "2021.2 - 2021.5"
+    },
+    "kaon_docsis": {
+      "team": "DOCSIS TEAM",
+      "description": "Development of network service and management program based on DOCSIS cable network",
+      "start_date": "2021.6"
+    },
+    "college_graduation": {
+      "title": "College graduation",
+      "description": "Graduated from college while working",
+      "date": "2021.8"
+    },
+    "kaon_platform": {
+      "team": "PLATFORM TEAM",
+      "description": "Development of advanced projects and development of Kaon Broadband own technology platform",
+      "start_date": "2024.1"
+    }
+  },
+  "major_projects": {
+    "vibrant_wifi7d": "Vibrant WiFi7D",
+    "quantum_wide": "Quantum WIDE",
+    "ws_agent": "WS Agent"
   }
+}
