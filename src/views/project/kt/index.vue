@@ -11,6 +11,7 @@
                 :src="items[0].img"
                 height="225px"
                 cover
+                :style="{ filter: 'blur(3px)' }"
             >
                 <div class="center-btn">
                     <!-- <v-btn
@@ -31,7 +32,7 @@
                             ></v-btn>
                         </template>
                         <template v-slot:default="{ isActive }">
-                            <v-card title="KT WiFi 7D (Vibrant WiFi)">
+                            <v-card title="Vibrant WiFi Project">
                                 <v-card-text>
                                         <v-row>
                                             <v-col
@@ -44,6 +45,7 @@
                                                 :src="list.img"
                                                 aspect-ratio="1"
                                                 class="bg-grey-lighten-2"
+                                                :style="{ filter: 'blur(2px)' }"
                                             >
                                                 <template v-slot:placeholder>
                                                 <v-row
@@ -77,11 +79,11 @@
         </v-hover>
 
         <v-card-title>
-        Vibrant WiFi7D
+            Domestic Tier 1 Project 
         </v-card-title>
 
         <v-card-subtitle>
-        -
+            Domestic business AP WEB-UI
         </v-card-subtitle>
 
         <v-card-actions>

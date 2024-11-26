@@ -78,11 +78,11 @@
         </v-hover>
 
         <v-card-title>
-        {{ "Quantum WIDE" }}
+        {{ "Quantum WIDE Project" }}
         </v-card-title>
 
         <v-card-subtitle>
-        {{ "-" }}
+        {{ "Development of company common WEB-UI" }}
         </v-card-subtitle>
 
         <v-card-actions>
