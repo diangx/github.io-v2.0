@@ -3,6 +3,7 @@ import App from './App.vue'
 import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
 import store from './store'
 import i18n from './i18n'
+import axios from 'axios';
 
 // Vuetify
 import 'vuetify/styles'
@@ -27,6 +28,7 @@ app.use(vuetify)
 app.use(store)
 app.use(i18n)
 
+app.config.globalProperties.$axios = axios;
 app.config.globalProperties.$state = process.env.STATE
 app.config.globalProperties.$images = images
 
