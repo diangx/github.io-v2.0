@@ -2,6 +2,7 @@ const { defineConfig } = require('@vue/cli-service')
 
 const CUSTOM = require('./env.json')
 process.env.STATE = CUSTOM.STATE
+process.env.CRYPTO_SERVERADDRESS = CUSTOM.CRYPTO_SERVERADDRESS
 
 module.exports = defineConfig({
     outputDir: 'docs', // 빌드 결과물을 docs 디렉토리에 생성
@@ -18,7 +19,8 @@ module.exports = defineConfig({
 
             args[0]['process.env'] = {
                 ...args[0]['process.env'],
-                STATE: JSON.stringify(process.env.STATE)
+                STATE: JSON.stringify(process.env.STATE),
+                CRYPTO_SERVERADDRESS: JSON.stringify(process.env.CRYPTO_SERVERADDRESS)
             }
 
             return args;
